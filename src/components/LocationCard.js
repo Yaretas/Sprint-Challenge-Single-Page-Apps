@@ -1,5 +1,4 @@
 import React from "react";
-import "index.css";
 
 export default function LocationCard(props) {
   const location = props.location;

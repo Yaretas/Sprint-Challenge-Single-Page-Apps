@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import axios from "axios";
 import LocationCard from "./LocationCard.js";
-import Header from "./Header";
-import TabNav from "./TabNav";
 
 export default function LocationsList() {
 
@@ -13,6 +11,7 @@ export default function LocationsList() {
     axios
         .get("https://rickandmortyapi.com/api/location/")
         .then(response => {
+            console.log(response);
         setLocationList(response.data.results);
         })
         .catch(err => {
@@ -22,8 +21,6 @@ export default function LocationsList() {
 
     return (
     <>
-        <Header />
-        <TabNav />
         <section className="location-list grid-view">
         {locationList.map(location => {
             return <LocationCard location={location} key={location.id} />;

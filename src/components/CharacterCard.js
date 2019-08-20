@@ -1,18 +1,16 @@
 import React from "react";
-import "index.css";
 
-export default function CharacterCard(props) {
-  const char = props.char;
+export default function CharacterCard( { image, name, species, status, location, origin, episodes } ) {
   return (
     <div className="card">
-    <img src={char.image} />
-    <h1 className="character-h1"> {char.name}</h1>
-
-        <p>Species: {char.species}</p>
-        <p>Status: {char.status}</p>
-        <p>Gender: {char.gender}</p>
-        <p>Location: {char.location.name}</p>
-        <p>Origin: {char.origin.name}</p>
+    <img src={image} />
+    <h1 className="character-h1"> {name}</h1>
+  
+         <p>species: {species}</p>
+         <p>status: {status}</p>
+         {/* <p>gender: {gender}</p> */}
+         <p>location: {location.name}</p>
+         <p>origin: {origin.name}</p>
     </div>
   );
 }

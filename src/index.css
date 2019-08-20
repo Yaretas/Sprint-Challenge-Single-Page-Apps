@@ -38,6 +38,14 @@ header h1 {
   text-align: center;
 }
 
+.nav-Button{
+  padding: 10px 25px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .character-h1{
   text-align: center;
 }
