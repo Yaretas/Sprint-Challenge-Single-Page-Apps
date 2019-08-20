@@ -24,7 +24,16 @@ export default function CharacterList() {
 
       <section className="character-list grid-view">
         {characterList.map(character => {
-          return <CharacterCard character={character} key={character.id} image={character.image} name={character.name} species={character.species} status={character.status} location={character.location.name} origin={character.origin.name}/>;
+          return <CharacterCard 
+          character={character} 
+          key={character.id} 
+          image={character.image} 
+          name={character.name} 
+          species={character.species} 
+          status={character.status} 
+          location={character.location.name} 
+          origin={character.origin.name} 
+          gender={character.gender} />;
         })}
       </section>
     </>

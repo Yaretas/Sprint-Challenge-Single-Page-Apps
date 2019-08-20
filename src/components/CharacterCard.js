@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CharacterCard( { image, name, species, status, location, origin, episodes } ) {
+export default function CharacterCard( { image, name, species, gender, status, location, origin, episodes } ) {
   return (
     <div className="card">
     <img src={image} />
@@ -8,7 +8,7 @@ export default function CharacterCard( { image, name, species, status, location,
   
          <p>species: {species}</p>
          <p>status: {status}</p>
-         {/* <p>gender: {gender}</p> */}
+         <p>gender: {gender}</p>
          <p>location: {location.name}</p>
          <p>origin: {origin.name}</p>
     </div>

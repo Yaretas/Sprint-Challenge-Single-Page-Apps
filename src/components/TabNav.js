@@ -7,9 +7,10 @@ export default function TabNav() {
 
     return (       
     <nav>
-        <NavLink className="NavButton" to="/">Home</NavLink>
-        <NavLink className="NavButton" to="/characters">Characters</NavLink>
-        <NavLink className="NavButton" to="/locations">Locations</NavLink>
+        <NavLink className="nav-Button" to="/">Home</NavLink>
+        <NavLink className="nav-Button" to="/characters">Characters</NavLink>
+        <NavLink className="nav-Button" to="/locations">Locations</NavLink>
+        <NavLink className="nav-Button" to="/episodes">Episodes</NavLink>
     </nav>
 )
  
