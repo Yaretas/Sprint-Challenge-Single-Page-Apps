@@ -15,6 +15,7 @@ main {
 }
 
 .grid-view {
+  margin: 20px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -27,13 +28,44 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+
 .main-img {
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
+}
 
 header h1 {
   text-align: center;
+}
+
+.nav-Button {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.character-h1{
+  text-align: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-card{
+  margin: 30px;
+  padding: 30px;
+  border: 1px solid rgb(87, 83, 83);
+  border-radius: 10px;
+  box-shadow: 2px 4px darkslategrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
 }
